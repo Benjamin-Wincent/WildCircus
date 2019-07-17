@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,9 +12,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CirqueComponent } from './cirque/cirque.component';
 import { SpectacleComponent } from './spectacle/spectacle.component';
 import { GalerieComponent } from './galerie/galerie.component';
-import { AchatComponent } from './achat/achat.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArtistComponent } from './artist/artist.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -32,12 +34,12 @@ const appRoutes: Routes = [
     component: GalerieComponent
   },
   {
-    path: 'reservation',
-    component: AchatComponent
-  },
-  {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   },
   {
     path: '',
@@ -53,15 +55,18 @@ const appRoutes: Routes = [
     CirqueComponent,
     SpectacleComponent,
     GalerieComponent,
-    AchatComponent,
     ContactComponent,
-    ArtistComponent
+    ArtistComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

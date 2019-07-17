@@ -1,9 +1,63 @@
-.parallax {
+.parallax1 {
   /* The image used */
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url("../../assets/pictures/clown.jpg");
+  background-image: url("../../assets/pictures/spectacle1.png");
+  opacity: 0.5;
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/pictures/spectacle2.png");
+  opacity: 0.5;
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/pictures/spectacle3.png");
+  opacity: 0.5;
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/pictures/spectacle4.png");
   opacity: 0.5;
   /* Set a specific height */
   height: 400px;
@@ -18,5 +72,8 @@
 
 .text-description {
   padding-top: 20px; 
-  text-align : right;
+  text-align: right;
+  font-size: 40px;
+  color: white;
+  font-style: bold;
 }
