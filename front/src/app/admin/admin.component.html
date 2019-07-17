@@ -10,7 +10,7 @@
         </div>
         <div class="col-4">
             <label>Description :</label>
-            <input type="text" name="role" [(ngModel)]="newArtist.description" />
+            <input type="text" name="description" [(ngModel)]="newArtist.description" />
         </div>
     </div>
 
@@ -25,12 +25,12 @@
       <tr>
         <td>ID</td>
         <td>Name</td>
-        <td>Role</td>
+        <td>description</td>
       </tr>
       <tr *ngFor="let artist of artists">
         <td>{{ artist.id }}</td>
         <td>{{ artist.name }}</td>
-        <td>{{ artist.role }}</td>
+        <td>{{ artist.description }}</td>
         <td>
           <button (click)="deleteArtist(artist.id)" onclick="location.reload();">Delete</button>
         </td>
