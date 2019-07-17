@@ -1,0 +1,83 @@
+<div class="container-fluid contact shadow">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 col-12 text-center shadow icon">
+            <img class="adresse" src="../../assets/pictures/adresse.png">
+            <p>Rue Vuillerme 69002 Lyon</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 text-center shadow icon">
+            <img class="telephone" src="../../assets/pictures/telephone.png">
+            <p>06 66 66 66 66</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 text-center shadow icon">
+            <img class="email" src="../../assets/pictures/email.png">
+            <p>wildcircus@gmail.com</p>
+        </div>
+    </div>
+</div>
+<div class="container formulaire shadow">
+    <form>
+        <fieldset class="fieldsetContact">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="name">Nom et prénom</label>
+                    <input type="text" class="form-control" formControlName="name" placeholder="Nom, prénom" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="city">Ville</label>
+                    <input type="text" class="form-control" formControlName="city" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="exemple@exemple.fr"
+                        required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="postCode">Code postal</label>
+                    <input type="texte" class="form-control" formControlName="postCode">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="departement">Département</label>
+                    <input type="texte" class="form-control" formControlName="departement">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="country">Pays</label>
+                    <select formControlName="country" class="form-control">
+                        <option selected>France</option>
+                        <option>Belgique</option>
+                        <option>Suisse</option>
+                        <option>Autres</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="motive">Motif du contact</label>
+                    <select formControlName="motive" class="form-control">
+                        <option selected>Casting</option>
+                        <option>Tournée</option>
+                        <option>Presse</option>
+                        <option>Scolaire</option>
+                        <option>Partenaire</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12 groupTextArea" style="margin-bottom: 0px;">
+                    <label for="message"></label>
+                    <textarea class="form-control textArea" formControlName="message" rows="10"
+                        placeholder="Entrez votre texte ici" required></textarea>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </fieldset>
+    </form>
+
+</div>

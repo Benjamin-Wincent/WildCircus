@@ -1,0 +1,22 @@
+.parallax {
+  /* The image used */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/pictures/clown.jpg");
+  opacity: 0.5;
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.text-description {
+  padding-top: 20px; 
+  text-align : right;
+}
